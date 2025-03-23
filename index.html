@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Contact Form</title>
+    <link rel="stylesheet" href="./output-style.css">
+</head>
+<body class="bg-amber-500 md:bg-violet-400">
+
+<main class="w-full h-dvh flex items-center justify-center">
+    <div class="bg-stone-400 w-full h-full relative md:w-[70%] md:h-[90dvh] md:rounded-md md:overflow-hidden md:shadow-2xl md:shadow-gray-900 md:flex">
+        
+        <!-- Left Side (Image) -->
+        <div class="w-full h-full bg-black absolute top-0 left-0 md:relative md:w-[50%]">
+            <img src="./img.jpg" class="size-full object-cover object-center blur-sm opacity-55 md:blur-none" alt="">
+        </div>
+
+        <!-- Right Side (Form) -->
+        <div class="relative z-10 w-full h-full md:w-[50%] md:bg-slate-800 flex flex-col justify-center">
+            <form action="" class="text-white flex flex-col gap-4 justify-center px-8">
+                <h1 class="text-white uppercase font-bold text-2xl">Contact Me</h1>
+                
+                <div class="flex flex-col gap-2">
+                    <label for="name" class="capitalize">Your Name</label>
+                    <input type="text" class="input" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="phone" class="capitalize">Your Number</label>
+                    <input type="number" class="input" id="phone" placeholder="Ph. no.">
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="email" class="capitalize">Your Email</label>
+                    <input type="email" class="input" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="msg" class="capitalize">Your Message</label>
+                    <textarea name="msg" class="input resize-none min-h-40" placeholder="Write your message here" id=""></textarea>
+                </div>
+
+                <div class="flex justify-between gap-2">
+                    <input type="submit" class="btn" value="Submit">
+                    <input type="reset" class="btn" value="Reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
